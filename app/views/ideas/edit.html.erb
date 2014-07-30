@@ -1,0 +1,13 @@
+<h1>Editing Idea #<%= @idea.id %></h1>
+
+<form action="/ideas/<%= @idea.id %>/update">
+  <div>
+    <label for="description">description</label><br />
+    <input id="description" name="description" value="<%= @idea.description  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+
